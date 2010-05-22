@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5dp"
+	android:id="@+id/pronunciationGuideLinearLayout">
+
+	<TextView android:id="@+id/romaajiNameInPronunciationGuide" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="romaaji goes here"
+		android:textSize="28sp" android:gravity="top|center_horizontal"/>
+		
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="center_horizontal"
+		android:layout_weight="1"
+		>
+
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:shrinkColumns="1"		
+			android:id="@+id/pronunciationGuideTable">
+
+			<TableRow>
+				<TextView android:text="oo" android:padding="2dp"></TextView>
+				<TextView android:text="hello!" android:padding="2dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			</TableRow>
+			<TableRow>
+				<TextView android:text="oo" android:padding="2dp"></TextView>
+				<TextView  android:padding="2dp"
+				android:layout_width="wrap_content"
+					android:text="hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! hello world! 
+					"></TextView>
+			</TableRow>
+		</TableLayout>
+
+	</ScrollView>
+</LinearLayout>

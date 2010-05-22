@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/japanese_sunset_background"
+	android:padding="10dp">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:orientation="vertical" android:gravity="center_horizontal|bottom">
+
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal" android:id="@+id/englishNameEditTextLinearLayout">
+				<EditText android:id="@+id/englishNameEditText"
+					android:hint="@string/englishNameExplanation" android:layout_width="wrap_content"
+					android:minWidth="225dp" android:layout_height="wrap_content"
+					android:nextFocusDown="@+id/convertButton" android:singleLine="true"></EditText>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:gravity="center_horizontal"
+				android:orientation="horizontal" android:layout_below="@id/englishNameEditTextLinearLayout">
+				<Button android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/convertButton"
+					android:text="@string/convert" android:minWidth="100dp"></Button>
+
+
+			</LinearLayout>
+		</RelativeLayout>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			>			
+			</LinearLayout>
+
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:gravity="bottom|center_horizontal"
+		android:orientation="horizontal" android:layout_alignParentBottom="true">
+		<Button android:text="@string/viewSavedKanjiText" android:id="@+id/viewSavedKanjiButton"
+			android:layout_width="wrap_content" android:minWidth="100dp"
+			android:layout_height="wrap_content"></Button>
+		<Button android:text="@string/about" android:id="@+id/aboutButton"
+			android:layout_width="wrap_content" android:minWidth="100dp"
+			android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+</FrameLayout>

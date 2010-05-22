@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="center_horizontal" android:padding="5dp">
+
+		<HorizontalScrollView android:paddingBottom="5dp"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+			<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:id="@+id/writingGuideTable">
+
+				<TableRow android:id="@+id/writingGuideTableRow1" />
+
+				<TableRow android:id="@+id/writingGuideTableRow2" />
+			</TableLayout>
+
+		</HorizontalScrollView>
+
+		<ImageView android:id="@+id/writingGuideImageView"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:visibility="gone" android:src="@drawable/katakana_a"></ImageView>
+			
+		<TextView android:id="@+id/writingGuideExplanationTextView"
+		android:text="@string/writingGuideExplanationText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="18sp" android:textStyle="italic" android:gravity="center_horizontal"></TextView>
+		
+		<TextView android:id="@+id/writingGuideTenTenDisclaimerTextView"
+		android:text="@string/writingGuideTenTenDisclaimerText"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textSize="14sp" android:gravity="center_horizontal" android:visibility="gone"></TextView>
+		
+		
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:paddingTop="5dp" android:gravity="center_horizontal">
+		<Button android:id="@+id/writingGuideDoneButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/goBackText"/>
+			</LinearLayout>
+			
+
+
+	</LinearLayout>
+
+</ScrollView>

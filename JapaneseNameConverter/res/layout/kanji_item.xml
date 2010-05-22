@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:shrinkColumns="0" android:stretchColumns="1">
+	<TableRow>
+		<TextView android:id="@+id/kanjiTextView" android:text="kanji here!"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:padding="2dp" android:textSize="36sp"></TextView>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:padding="2dp"
+			android:gravity="right">
+			<TextView android:id="@+id/kanjiOriginalEnglishTextView"
+				android:text="original english here!" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:textSize="14sp"
+				android:visibility="gone" android:paddingRight="10dp"></TextView>
+		</LinearLayout>
+	</TableRow>
+	<TableRow android:layout_span="2">
+		<TextView android:id="@+id/kanjiRoomajiTextView"
+			android:text="roomaji here!" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:padding="2dp"
+			android:textSize="14sp" android:textStyle="italic"></TextView>
+
+	</TableRow>
+
+	<TableRow android:layout_span="2">
+		<TextView android:id="@+id/kanjiEnglishTextView"
+			android:text="english here!" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:padding="2dp"
+			android:textSize="14sp"></TextView>
+	</TableRow>
+
+
+</TableLayout>

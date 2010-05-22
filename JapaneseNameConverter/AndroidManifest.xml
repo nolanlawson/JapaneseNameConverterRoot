@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.nolanlawson.jnameconverter"
+      android:versionCode="1"
+      android:versionName="1.0">
+   <application android:icon="@drawable/jnameconvertericon" android:label="@string/app_name">
+        <activity android:name=".JNameConverterActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".NameDisplayActivity"></activity>
+        <activity android:name=".AboutActivity" 
+        	android:label="@string/app_name"
+        	android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".PronunciationGuideActivity"
+        	android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".WritingGuideActivity" android:theme="@android:style/Theme.Dialog">
+        </activity>
+        
+        <activity android:name=".GenerateKanjiActivity"></activity>
+        <activity android:name=".KanjiDialogActivity" android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".SendActionChooser" android:theme="@android:style/Theme.Light" 
+        android:label="@string/shareText">
+        </activity>
+        
+        <activity android:name=".ViewSavedKanjiActivity">
+        </activity>
+        
+    </application>
+   <uses-sdk android:minSdkVersion="3" />
+
+</manifest> 

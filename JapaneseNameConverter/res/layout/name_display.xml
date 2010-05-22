@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/japanese_sunset_background"
+	android:gravity="center_vertical">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_gravity="center_vertical">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:padding="5dp" android:layout_gravity="center_vertical"
+			android:gravity="center_horizontal">
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical" android:gravity="center_horizontal"
+				android:background="@color/translucentBlack">
+
+				<TextView android:id="@+id/englishNameExplanation"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="'Foo' translates to:" android:textSize="18sp"
+					android:gravity="center_horizontal" />
+
+				<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:id="@+id/katakanaName"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="katakana goes here" android:textSize="42sp"
+						android:gravity="center_horizontal" android:padding="5dp" />
+				</HorizontalScrollView>
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="@string/romaajiNameExplanation"
+					android:textSize="18sp" android:gravity="center_horizontal"
+					android:padding="5dp" />
+				<TextView android:id="@+id/romaajiName"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="romaaji goes here" android:textSize="36sp"
+					android:gravity="center_horizontal" android:padding="5dp" />
+				<EditText android:id="@+id/overrideRoomajiEditText"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textSize="18sp" android:minWidth="200dp"
+					android:hint="@string/overrideRoomajiHint" android:visibility="gone"
+					android:singleLine="true"></EditText>
+
+
+			</LinearLayout>
+			<TableLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:shrinkColumns="*"
+				android:gravity="center_horizontal" android:padding="5dp">
+
+				<TableRow>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button android:text="@string/convertToKanjiButtonText"
+							android:id="@+id/convertToKanjiButton" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_weight="0.33"></Button>
+
+						<Button android:text="@string/shareText" android:id="@+id/shareKatakanaButton"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="0.33"></Button>
+
+						<Button android:text="@string/goBackText" android:id="@+id/startOverButton"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:layout_weight="0.33"></Button>
+					</LinearLayout>
+				</TableRow>
+
+				<TableRow>
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+						<Button android:layout_width="wrap_content"
+							android:layout_height="wrap_content" android:id="@+id/pronunciationGuideButton"
+							android:text="@string/pronunciationGuide"
+							android:layout_weight="0.5"></Button>
+
+						<Button android:text="@string/writingGuideText" android:id="@+id/writingGuideButton"
+							android:layout_weight="0.5"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+					</LinearLayout>
+				</TableRow>
+
+			</TableLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</FrameLayout>

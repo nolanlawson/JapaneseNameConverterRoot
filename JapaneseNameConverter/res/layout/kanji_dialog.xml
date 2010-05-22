@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:gravity="center_horizontal">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical" android:gravity="center_horizontal"
+		android:padding="10dp">
+
+		<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:visibility="gone"
+			android:id="@+id/kanjiSpinnersHorizontalScrollView">
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:gravity="center_horizontal"
+				android:id="@+id/kanjiSpinnersLinearLayout">
+			</LinearLayout>
+		</HorizontalScrollView>
+
+		<TextView android:id="@+id/kanjiTextViewInDialog"
+			android:text="kanji here!" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:padding="2dp"
+			android:textSize="72sp"></TextView>
+
+		<TextView android:id="@+id/kanjiRoomajiTextViewInDialog"
+			android:text="roomaji here!" android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:padding="2dp"
+			android:textSize="36sp" android:textStyle="italic"></TextView>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal"
+			android:id="@+id/kanjiEnglishContainingLinearLayout">
+
+			<TextView android:id="@+id/kanjiEnglishTextViewInDialog"
+				android:text="english here!" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:padding="2dp"
+				android:textSize="28sp"></TextView>
+		</LinearLayout>
+
+	<TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:gravity="center_horizontal" collapsible="*">
+		<TableRow 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal"
+			android:paddingTop="5dp">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/modifyKanjiButton"
+				android:text="@string/modifyKanjiText"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/saveKanjiButton"
+				android:text="@string/saveKanjiText"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/saveAlreadySavedKanjiButton"
+				android:text="@string/saveKanjiText" android:visibility="gone"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/shareKanjiButton"
+				android:text="@string/shareText"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/goBackToKanjiViewButton"
+				android:text="@string/finishText"></Button>
+		</TableRow>
+		<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal"
+			android:paddingTop="5dp" android:id="@+id/additionalButtonsLinearLayout"
+			android:visibility="gone">
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/saveNewKanjiButton"
+				android:text="@string/saveNewText"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/deleteKanjiButton"
+				android:text="@string/deleteText"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/cancelKanjiButton"
+				android:text="@string/cancelText"></Button>
+
+		</TableRow>
+		</TableLayout>
+
+
+	</LinearLayout>
+</ScrollView>

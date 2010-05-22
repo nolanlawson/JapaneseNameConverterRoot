@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Japanese Name Converter</string>
+    <string name="convert">Convert to Katakana</string>
+    <string name="about">About</string>
+    <string name="viewSavedKanjiText">My Saved Kanji</string>
+    <string name="englishNameExplanation">Enter name in English</string>
+    <string name="pronunciationGuide">Pronunciation Guide</string>
+    <string name="goBackText">Go Back</string>
+    <string name="finishText">Done</string>
+    <string name="romaajiNameExplanation">or, in romanized form (roomaji):</string>
+    <string name="overrideRoomajiHint">Enter roomaji</string>
+    <string name="invalidRoomaji">Invalid roomaji</string>
+    <string name="copyToClipboardText">Copy to clipboard</string>
+    <string name="copiedToClipboardText">Copied to clipboard!</string>
+    <string name="cancelText">Cancel</string>
+    <string name="saveNewText">Save New</string>
+    <string name="deleteText">Delete</string>
+    <string name="overrideKatakanaText">Override Katakana</string>
+    <string name="pronunciationGuideTitle">Pronunication Guide</string>
+    <string name="aboutText">\
+<b>Version 1.0.</b>\n\n\
+Developed by Nolan Lawson\n\
+(nolan.lawson@gmail.com).\n\n\
+Graphic design by Shannon O\'Brien\n\
+(affordabledesignseattle@gmail.com).\n\n\
+English-to-katakana model built using a variation of the Transformation-Based Learner
+originally designed by Eric Brill.\n\n\
+Thanks to Wikimedia Commons user M4RC0 for the katakana writing guide images.
+    </string>
+    <string name="roomajiModel">roomaji_model_20090128_pop1_3_3_min2_fewer_rules_hacked.txt</string>
+    <string name="kanjiDictionary">kanji_dictionary.csv</string>
+    <string name="nameLookup">all_names.txt</string>
+    <string name="convertToKanjiButtonText">Convert to Kanji</string>
+    <string name="emptyKanjiList">No kanji found.</string>
+    <string name="moreCombinations"><i>Show more...</i></string>
+    <string name="modifyKanjiText">Edit</string>
+    <string name="shareText">Share</string>
+    <string name="doneModifyingText">Show</string>
+    <string name="saveKanjiText">Save</string>
+    <string name="shareKanjiTextToSend">I translated the name \"%s\" into Japanese using the %s app for Android!  It\'s %s (\"%s\" - \"%s\").</string>
+    <string name="shareKatakanaTextToSend">I transliterated the name \"%s\" into Japanese using the %s app for Android!  It\'s %s (\"%s\").</string>
+    <string name="shareSubjectToSend">"\"%s\" in Japanese"</string>
+    <string name="kanjiSavedText">Saved to My Saved Kanji</string>
+    <string name="writingGuideText">Writing Guide</string>
+    <string name="writingGuideExplanationText">Touch a character to begin</string>
+    <string name ="writingGuideTenTenDisclaimerText">* This drawing doesn\'t include the ten-ten (\") in the upper right-hand corner.</string>
+    <string name ="writingGuideMaruDisclaimerText">* This drawing doesn\'t include the maru (little circle) in the upper right-hand corner.</string>
+    <string name="writingGuideDashExplanation">* Lengthens the previous vowel</string>
+    <string name="writingGuideSmallTsuExplanation">* Lengthens the following consonant</string>
+    <string name="writingGuideSmallVowelExplanation">* Overrides the previous vowel</string>
+</resources>
