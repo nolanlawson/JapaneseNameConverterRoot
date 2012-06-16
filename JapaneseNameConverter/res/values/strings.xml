@@ -38,8 +38,8 @@ Thanks to Wikimedia Commons user M4RC0 for the katakana writing guide images.
     <string name="shareText">Share</string>
     <string name="doneModifyingText">Show</string>
     <string name="saveKanjiText">Save</string>
-    <string name="shareKanjiTextToSend">I translated the name \"%s\" into Japanese using the %s app for Android!  It\'s %s (\"%s\" - \"%s\").</string>
-    <string name="shareKatakanaTextToSend">I transliterated the name \"%s\" into Japanese using the %s app for Android!  It\'s %s (\"%s\").</string>
+    <string name="shareKanjiTextToSend" formatted="false">I translated the name \"%s\" into Japanese using the %s app for Android!  It\'s %s (\"%s\" - \"%s\").</string>
+    <string name="shareKatakanaTextToSend" formatted="false">I transliterated the name \"%s\" into Japanese using the %s app for Android!  It\'s %s (\"%s\").</string>
     <string name="shareSubjectToSend">"\"%s\" in Japanese"</string>
     <string name="kanjiSavedText">Saved to My Saved Kanji</string>
     <string name="writingGuideText">Writing Guide</string>

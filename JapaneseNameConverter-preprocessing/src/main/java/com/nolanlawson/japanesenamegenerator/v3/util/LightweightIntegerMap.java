@@ -22,27 +22,22 @@ public class LightweightIntegerMap implements Map<Integer,Integer> {
     public LightweightIntegerMap() {
     }
     
-    @Override
     public int size() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public boolean isEmpty() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public boolean containsKey(Object key) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public boolean containsValue(Object value) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public Integer get(Object key) {
 
         Integer intKey = (Integer)key;
@@ -56,7 +51,6 @@ public class LightweightIntegerMap implements Map<Integer,Integer> {
         }
     }
 
-    @Override
     public Integer put(Integer key, Integer value) {
 
         if (values == null) {
@@ -85,7 +79,6 @@ public class LightweightIntegerMap implements Map<Integer,Integer> {
         return null; //  I don't give a shit
     }
 
-    @Override
     public Integer remove(Object key) {
 
         Integer intKey = (Integer)key;
@@ -97,22 +90,18 @@ public class LightweightIntegerMap implements Map<Integer,Integer> {
         return null; // I don't give a shit
     }
 
-    @Override
     public void putAll(Map<? extends Integer, ? extends Integer> m) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public void clear() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public Set<Integer> keySet() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    @Override
     public Collection<Integer> values() {
 
         List<Integer> result = new ArrayList<Integer>();
@@ -126,7 +115,6 @@ public class LightweightIntegerMap implements Map<Integer,Integer> {
         return result;
     }
 
-    @Override
     public Set<Entry<Integer, Integer>> entrySet() {
         throw new UnsupportedOperationException("Not supported yet.");
     }

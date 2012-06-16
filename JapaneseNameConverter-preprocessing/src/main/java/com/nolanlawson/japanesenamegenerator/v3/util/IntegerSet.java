@@ -53,13 +53,11 @@ public class IntegerSet implements Iterable<Integer> {
         return i < values.length && values[i];
     }
 
-    @Override
     public Iterator<Integer> iterator() {
         return new Iterator<Integer>() {
 
             int idx = 0;
 
-            @Override
             public boolean hasNext() {
                 while (idx < values.length && !values[idx]) {
                     idx++;
@@ -68,7 +66,6 @@ public class IntegerSet implements Iterable<Integer> {
                 return (idx < values.length);
             }
 
-            @Override
             public Integer next() {
 
                 if (!hasNext()) {
@@ -79,7 +76,6 @@ public class IntegerSet implements Iterable<Integer> {
                 return idx - 1;
             }
 
-            @Override
             public void remove() {
                 throw new UnsupportedOperationException("Not supported.");
             }

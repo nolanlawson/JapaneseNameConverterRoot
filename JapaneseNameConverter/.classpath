@@ -3,6 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry kind="lib" path="/home/nolan/workspace/japanese-name-generator-v3/target/japanese-name-generator-v3-1.0-SNAPSHOT.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="lib" path="lib/japanese-name-generator-v3-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
