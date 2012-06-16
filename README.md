@@ -9,8 +9,6 @@ License
 =======
 [WTFPL][1], although attribution would be nice.
 
-![Screenshot][2]
-
 Overview
 ========
 The Japanese Name Converter is a simple Android app that converts English names into their Japanese equivalents using a mix of dictionary lookup and machine learning. The machine learning algorithm is a variation of the Transformation-Based Learning (TBL) method invented by Eric Brill.  You can read [the explanatory article][2] for more info.
