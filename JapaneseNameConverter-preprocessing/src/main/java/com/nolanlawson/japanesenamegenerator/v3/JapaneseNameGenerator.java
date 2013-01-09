@@ -1,12 +1,5 @@
 package com.nolanlawson.japanesenamegenerator.v3;
 
-import com.nolanlawson.japanesenamegenerator.v3.data.Model;
-import com.nolanlawson.japanesenamegenerator.v3.data.ModelMarshaller;
-import com.nolanlawson.japanesenamegenerator.v3.katakana.KatakanaConverter;
-import com.nolanlawson.japanesenamegenerator.v3.katakana.KatakanaParseException;
-import com.nolanlawson.japanesenamegenerator.v3.katakana.RomaajiMassager;
-import com.nolanlawson.japanesenamegenerator.v3.util.Pair;
-import com.nolanlawson.japanesenamegenerator.v3.util.StringUtil;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -14,6 +7,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.nolanlawson.japanesenamegenerator.v3.data.Model;
+import com.nolanlawson.japanesenamegenerator.v3.data.ModelMarshaller;
+import com.nolanlawson.japanesenamegenerator.v3.katakana.KatakanaConverter;
+import com.nolanlawson.japanesenamegenerator.v3.katakana.KatakanaParseException;
+import com.nolanlawson.japanesenamegenerator.v3.katakana.RomaajiMassager;
+import com.nolanlawson.japanesenamegenerator.v3.util.Pair;
+import com.nolanlawson.japanesenamegenerator.v3.util.StringUtil;
 
 /**
  *
@@ -112,7 +113,7 @@ public class JapaneseNameGenerator {
         String katakanaResult = katakana.substring(0, katakana.length() - 1);
         String romaajiResult = romaaji.substring(0, romaaji.length() - 1);
 
-        return new Pair<String,String>(romaajiResult, katakanaResult);
+        return Pair.create(romaajiResult, katakanaResult);
 
     }
 
@@ -151,7 +152,7 @@ public class JapaneseNameGenerator {
             
         }
 
-        return new Pair<String,String>(romaaji, katakana);
+        return Pair.create(romaaji, katakana);
     }
 
     private String convertInitials(String token) {
@@ -181,7 +182,7 @@ public class JapaneseNameGenerator {
 
         try {
             Map<String,String> result = new HashMap<String, String>();
-            BufferedReader buff = new BufferedReader(new InputStreamReader(inputStream));
+            BufferedReader buff = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
             while (buff.ready()) {
                 String line = buff.readLine();
                 String[] splitValues = StringUtil.quickSplit(line," ");

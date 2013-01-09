@@ -34,7 +34,7 @@ public class PronunciationGuide {
             if (i < roomaji.length() - 2) {
                 String trigram = roomaji.substring(i, i + 3);
                 if (guideHash.containsKey(trigram)) {
-                    result.add(new Pair<String,String>(trigram, guideHash.get(trigram)));
+                    result.add(Pair.create(trigram, guideHash.get(trigram)));
                     i += 2;
                     continue;
                 }
@@ -45,14 +45,14 @@ public class PronunciationGuide {
             if (i < roomaji.length() - 1) {
                 String bigram = roomaji.substring(i, i + 2);
                 if (guideHash.containsKey(bigram)) {
-                    result.add(new Pair<String,String>(bigram, guideHash.get(bigram)));
+                    result.add(Pair.create(bigram, guideHash.get(bigram)));
                     i++;
                     continue;
                 }
             }
             String unigram = Character.toString(roomaji.charAt(i));
             if (guideHash.containsKey(unigram)) {
-                result.add(new Pair(unigram, guideHash.get(unigram)));
+                result.add(Pair.create(unigram, guideHash.get(unigram)));
             }
         }
 

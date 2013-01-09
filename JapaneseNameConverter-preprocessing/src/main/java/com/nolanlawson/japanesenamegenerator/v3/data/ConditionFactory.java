@@ -14,7 +14,7 @@ public class ConditionFactory {
             new HashMap<Pair<ConditionType, Object>, Condition>();
 
     public static Condition getCondition(ConditionType conditionType, Object value) {
-        Pair<ConditionType,Object> pair = new Pair<ConditionType, Object>(conditionType, value);
+        Pair<ConditionType,Object> pair = Pair.create(conditionType, value);
 
         Condition condition = conditionMap.get(pair);
         if (condition == null) {

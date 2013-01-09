@@ -82,7 +82,7 @@ public class TrainerRunner {
             while (buff.ready()) {
                 String line = buff.readLine();
                 String[] strPair = line.split("\\s+");
-                result.add(new Pair<String,String>(strPair[0],strPair[1]));
+                result.add(Pair.create(strPair[0],strPair[1]));
             }
             //Collections.shuffle(result);
             if (result.size() > limit) {
@@ -98,24 +98,24 @@ public class TrainerRunner {
     private static List<Pair<String,String>> getSmallTrainingData() {
         List<Pair<String,String>> trainingData = new ArrayList<Pair<String, String>>();
 
-        trainingData.add(new Pair<String,String>("nolan","nooran"));
-        trainingData.add(new Pair<String,String>("logan","roogan"));
-        trainingData.add(new Pair<String,String>("mel","meru"));
-        trainingData.add(new Pair<String,String>("roland","roorando"));
-        trainingData.add(new Pair<String,String>("michael","maikeru"));
-        trainingData.add(new Pair<String,String>("adam","adamu"));
-        trainingData.add(new Pair<String,String>("thea","teea"));
-        trainingData.add(new Pair<String,String>("gabe","geebu"));
-        trainingData.add(new Pair<String,String>("vincent","binsento"));
-        trainingData.add(new Pair<String,String>("valery","barerii"));
-        trainingData.add(new Pair<String,String>("alice","arisu"));
-        trainingData.add(new Pair<String,String>("john","jon"));
-        trainingData.add(new Pair<String,String>("jim","jimu"));
-        trainingData.add(new Pair<String,String>("bruce","burusu"));
-        trainingData.add(new Pair<String,String>("luigi","ruiji"));
-        trainingData.add(new Pair<String,String>("maevis","meebisu"));
-        trainingData.add(new Pair<String,String>("ramona","ramona"));
-        trainingData.add(new Pair<String,String>("steve","sutiibu"));
+        trainingData.add(Pair.create("nolan","nooran"));
+        trainingData.add(Pair.create("logan","roogan"));
+        trainingData.add(Pair.create("mel","meru"));
+        trainingData.add(Pair.create("roland","roorando"));
+        trainingData.add(Pair.create("michael","maikeru"));
+        trainingData.add(Pair.create("adam","adamu"));
+        trainingData.add(Pair.create("thea","teea"));
+        trainingData.add(Pair.create("gabe","geebu"));
+        trainingData.add(Pair.create("vincent","binsento"));
+        trainingData.add(Pair.create("valery","barerii"));
+        trainingData.add(Pair.create("alice","arisu"));
+        trainingData.add(Pair.create("john","jon"));
+        trainingData.add(Pair.create("jim","jimu"));
+        trainingData.add(Pair.create("bruce","burusu"));
+        trainingData.add(Pair.create("luigi","ruiji"));
+        trainingData.add(Pair.create("maevis","meebisu"));
+        trainingData.add(Pair.create("ramona","ramona"));
+        trainingData.add(Pair.create("steve","sutiibu"));
 
         return trainingData;
     }

@@ -37,7 +37,7 @@ public class TestKatakanaConversion {
             while (buff.ready()) {
                 String line = buff.readLine();
                 String[] strPair = line.split("\\s+");
-                result.add(new Pair<String,String>(strPair[0],strPair[1]));
+                result.add(Pair.create(strPair[0],strPair[1]));
             }
             //Collections.shuffle(result);
             if (result.size() > limit) {

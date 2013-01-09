@@ -58,7 +58,7 @@ public class Trainer {
 
             TransformingString transformingString = new TransformingString(pair.getFirst());
 
-            trainingData.add(new Pair<TransformingString,String>(transformingString, pair.getSecond()));
+            trainingData.add(Pair.create(transformingString, pair.getSecond()));
         }
 
         List<Rule> modelRules = new ArrayList<Rule>();
@@ -356,7 +356,7 @@ public class Trainer {
             }
         }
         
-        return new Pair<Rule,Integer>(maxRule,maxEditDistanceImprovement);
+        return Pair.create(maxRule,maxEditDistanceImprovement);
     }
 
     /**

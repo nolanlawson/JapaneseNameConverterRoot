@@ -9,7 +9,7 @@ public class Pair<E,T> {
     private E first;
     private T second;
 
-    public Pair(E first, T second) {
+    private Pair(E first, T second) {
         this.first = first;
         this.second = second;
     }
@@ -62,6 +62,9 @@ public class Pair<E,T> {
         return hash;
     }
 
+    public static <E,T> Pair<E,T> create(E first, T second) {
+        return new Pair<E, T> (first, second);
+    }
 
 
 }

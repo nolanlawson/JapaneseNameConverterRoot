@@ -1,12 +1,8 @@
 package com.nolanlawson.japanesenamegenerator.v3.kanji;
 
-import com.nolanlawson.japanesenamegenerator.v3.util.StringUtil;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -15,6 +11,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
+
+import com.nolanlawson.japanesenamegenerator.v3.util.StringUtil;
 
 /**
  *
@@ -357,7 +355,7 @@ public class KanjiGenerator {
         kanjiToEnglishMap = new HashMap<String, List<String>>();
 
         try {
-            BufferedReader buff = new BufferedReader(new InputStreamReader(kanjiDictionaryFileInputStream));
+            BufferedReader buff = new BufferedReader(new InputStreamReader(kanjiDictionaryFileInputStream, "UTF-8"));
 
             if (buff.ready()) {
                 buff.readLine(); // throw away first line of csv file
