@@ -15,7 +15,7 @@ The Japanese Name Converter is a simple Android app that converts English names 
 
 The project is made up of two components: 1) a Maven Java project for building the TBL transduction model (preprocessing phase), and 2) the Android app itself.
 
-Related Projects
+Related projects
 -------------
 
 * [Japanese Name Converter Server][3] - REST service
