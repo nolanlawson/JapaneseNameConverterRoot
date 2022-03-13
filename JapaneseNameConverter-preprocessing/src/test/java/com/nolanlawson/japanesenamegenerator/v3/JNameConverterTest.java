@@ -35,14 +35,20 @@ public class JNameConverterTest {
                 romaajiModelInputStream, directLookupInputStream);
         
         // these are pretty inaccurate due to the junit-test-only model
-        Assert.assertEquals(Pair.create("arekkusu","\u30a2\u30ec\u30c3\u30af\u30b9"), 
+        Assert.assertEquals(Pair.create("arekkusu","\u30a2\u30ec\u30c3\u30af\u30b9"),
                 generator.convertToRomaajiAndKatakana("alex"));
-        Assert.assertEquals(Pair.create("nooran", "\u30ce\u30fc\u30e9\u30f3"), 
+        Assert.assertEquals(Pair.create("nooran", "\u30ce\u30fc\u30e9\u30f3"),
                 generator.convertToRomaajiAndKatakana("nolan"));
-        Assert.assertEquals(Pair.create("bibian", "\u30d3\u30d3\u30a2\u30f3"), 
+        Assert.assertEquals(Pair.create("bibian", "\u30d3\u30d3\u30a2\u30f3"),
                 generator.convertToRomaajiAndKatakana("vivian"));
-        Assert.assertEquals(Pair.create("karen", "\u30ab\u30ec\u30f3"), 
+        Assert.assertEquals(Pair.create("karen", "\u30ab\u30ec\u30f3"),
                 generator.convertToRomaajiAndKatakana("karen"));
+        Assert.assertEquals(Pair.create("karen", "\u30ab\u30ec\u30f3"),
+                generator.convertToRomaajiAndKatakana("karen"));
+        Assert.assertEquals(Pair.create("bettoshi", "ベットシ"),
+                generator.convertToRomaajiAndKatakana("betsy"));
+        Assert.assertEquals(Pair.create("guren", "グレン"),
+                generator.convertToRomaajiAndKatakana("glen"));
     }
     
     @SuppressWarnings("unchecked")

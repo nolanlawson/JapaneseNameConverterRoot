@@ -475,8 +475,8 @@ beth besu
 bethanie besanii
 bethany besanii
 bethel beseru
-betsey bettsi
-betsy bettsi
+betsey bettosi
+betsy bettosi
 bette betto
 bettie beti
 bettina bettiina
@@ -1068,7 +1068,7 @@ d'andre diandore
 dagen dagen
 dahlia daria
 dai dai
-daisey  deijii
+daisey deijii
 daisy deijii
 dajka deika
 dakota dakota
@@ -1742,7 +1742,7 @@ gizelle jizeru
 gladis guradisu
 gladys guradisu
 glayds guradisu
-glen  guren
+glen guren
 glenda gurenda
 glenn guren
 glenna gurenna
@@ -2077,7 +2077,7 @@ janene janiin
 janet janetto
 janete janetto
 janett janetto
-janette  janetto
+janette janetto
 janey jenii
 jani jenii
 janice janisu
@@ -2398,7 +2398,7 @@ kassandra kasandora
 kassie kashii
 kat kyatto
 katarina katarina
-katarzyna  kataajina
+katarzyna kataajina
 kate keito
 katelin keitorin
 katelyn keitorin
@@ -2573,7 +2573,7 @@ krysten kurisuten
 krystin kurisutin
 krystle kurisutaru
 krystyna kurisutiina
-krzysztof  kurisutofu
+krzysztof kurisutofu
 kura kura
 kurt kaato
 kurtis kaatisu
@@ -2589,7 +2589,7 @@ lacey reishii
 lachlan rakuran
 laci reishii
 lacie reishii
-lacy  reishii
+lacy reishii
 ladawn radon
 ladonna radonna
 lady reidi
@@ -2597,7 +2597,7 @@ laetitia retishia
 laila reira
 laine rein
 lainey reinii
-lakeesha  rakiisha
+lakeesha rakiisha
 lakeisha rakiisha
 lakesha rakiisha
 lakeshia rakiisha
@@ -2615,7 +2615,7 @@ lanelle raneru
 lanesha raniisha
 lanette ranetto
 laney reinii
-langston  rangusuton
+langston rangusuton
 lanisha raniisha
 lara rara
 laraine rarein
@@ -3103,7 +3103,7 @@ mette mette
 mia mia
 micaela mikaera
 micah maika
-micha  maika
+micha maika
 michael maikeru
 michaela mikaera
 michal maikeru
@@ -4080,7 +4080,7 @@ tisha tisha
 tito tito
 titus taitasu
 tobe tobii
-tobey  tobii
+tobey tobii
 tobi tobii
 tobias tobaiasu
 toby tobii
